@@ -55,7 +55,7 @@ public class RegularExpressionMatching {
 					if(pi=='*'){
 						 char c=p.charAt(i-2);
 						 for (int k = j-1; k < s.length(); k++) {
-							if(c==s.charAt(k)){
+							if(c==s.charAt(k)||c=='.'){
 								r[i][k+1]=true;
 							}else{
 								break;
